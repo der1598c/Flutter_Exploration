@@ -2,6 +2,10 @@
 
 A new Flutter project.
 
+screenshot
+
+![](https://github.com/der1598c/Flutter_Exploration/blob/master/draggable_and_drag_target/screenshot.gif)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
