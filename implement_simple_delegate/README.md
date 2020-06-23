@@ -28,9 +28,19 @@ In your State<> class implement AlarmDelegate (with AlarmDelegate). as follows.
 
 ```dart
   class _MyHomePageState extends State<MyHomePage> with AlarmDelegate {
-      //...
+    Alarm mAlarm;
+
+    @override
+    void initState() {
+        // TODO: implement initState
+        super.initState();
+
+        this.mAlarm = Alarm();
+        this.mAlarm.delegate = this;
+    }
   }
 
+//When event comes, abstract method will call.
   @override
   void onUpdateTimes(int newSeconds) {
     // TODO: implement onUpdateTimes
