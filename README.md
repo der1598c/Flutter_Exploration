@@ -17,6 +17,8 @@ This is my first Flutter exploration repo(contained basic skill for flutter code
 
 [local_notification][local_notification]
 
+[implement_simple_delegate][implement_simple_delegate]
+
   [bottom_navigationbar]: <https://github.com/der1598c/Flutter_Exploration/tree/master/demo_bottom_navigationbar>
   [irregular_bottom_navigationbar]: <https://github.com/der1598c/Flutter_Exploration/tree/master/demo_irregular_bottom_navigationbar>
   [custom_page_route_animation]: <https://github.com/der1598c/Flutter_Exploration/tree/master/custom_page_route_animation>
@@ -24,3 +26,4 @@ This is my first Flutter exploration repo(contained basic skill for flutter code
   [simple_http_request]: <https://github.com/der1598c/Flutter_Exploration/tree/master/simple_http_request>
   [draggable_and_drag_target]: <https://github.com/der1598c/Flutter_Exploration/tree/master/draggable_and_drag_target>
   [local_notification]: <https://github.com/der1598c/Flutter_Exploration/tree/master/local_notification>
+  [implement_simple_delegate]: <https://github.com/der1598c/Flutter_Exploration/tree/master/implement_simple_delegate>
