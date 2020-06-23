@@ -2,6 +2,40 @@
 
 A new Flutter project.
 
+## How to
+
+Add dependencies: flutter_local_notifications: ^1.4.1
+  
+Import flutter_local_notifications package
+
+```dart
+  import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+```
+
+Initialize notification
+
+```dart
+  WidgetsFlutterBinding.ensureInitialized();
+
+  var initAndroidSetting = AndroidInitializationSettings('@mipmap/ic_launcher');
+  var initIosSetting = IOSInitializationSettings();
+  var initSetting = InitializationSettings(initAndroidSetting, initIosSetting);
+  await FlutterLocalNotificationsPlugin().initialize(initSetting);
+```
+
+Add a function for easy calling
+
+```dart
+  Future<void> showNotification(int counter) async {
+    var android = AndroidNotificationDetails(
+        'channelId', 'channelName', 'channelDescription');
+    var iOS = IOSNotificationDetails();
+    var platform = NotificationDetails(android, iOS);
+
+    await FlutterLocalNotificationsPlugin().show(0, 'Counter', counter.toString(), platform);
+  }
+```
+
 ![](https://github.com/der1598c/Flutter_Exploration/blob/master/local_notification/demo.gif)
 
 ## Getting Started
